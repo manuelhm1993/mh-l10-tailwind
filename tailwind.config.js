@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {},
+    // Configurar el container para que siempre esté centrado
+    container: {
+        center: true,
+    },
   },
   plugins: [],
 }

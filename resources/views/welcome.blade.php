@@ -10,16 +10,18 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-    {{-- Tailwind se diferencia de Bootstrap en que no te impone ningún diseño, hace que tú lo configures todo --}}
-    {{-- Aplica el centrado automático en el eje x y un ancho máximo según el tamaño de la pantalla --}}
+    {{-- Se logró este comportamiento a través de tailwind.config.js --}}
     {{-- <div class="container mx-auto"> --}}
     <div class="container">
-        <h1>Éste es un H1</h1>
-        <h2>Éste es un H2</h2>
-        <h3>Éste es un H3</h3>
-        <h4>Éste es un H4</h4>
-        <h5>Éste es un H5</h5>
-        <h6>Éste es un H6</h6>
+        {{-- Grid de tailwind --}}
+        <div class="grid grid-cols-4 gap-2">
+            <div class="bg-blue-200">A</div>
+            <div class="bg-blue-300">B</div>
+            <div class="bg-blue-400">C</div>
+            <div class="bg-blue-500">D</div>
+            <div class="bg-blue-600">E</div>
+            <div class="bg-blue-700">F</div>
+        </div>
     </div>
 </body>
 </html>

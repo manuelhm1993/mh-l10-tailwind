@@ -14,24 +14,23 @@
     {{-- <div class="container mx-auto"> --}}
     <div class="container">
         {{-- Grid de tailwind --}}
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-            @for ($i = 1; $i <= 16; $i++)
-                @php
-                    $resta = 5;
-
-                    if($i < 7) {
-                        $tonalidad = ($i + 1) * 100;
-                    }
-                    else if($i < 12) {
-                        $tonalidad = (($i - $resta) + 1) * 100;
-                    }
-                    else {
-                        $tonalidad = (($i - ($resta * 2)) + 1) * 100;
-                    }
-                @endphp
-
-                <div class="bg-blue-{{ $tonalidad }}">{{ chr($i + 65) }}</div>
-            @endfor
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-16 gap-4">
+            <div class="bg-blue-200">A</div>
+            <div class="bg-blue-300">B</div>
+            <div class="bg-blue-400">C</div>
+            <div class="bg-blue-500">D</div>
+            <div class="bg-blue-600">E</div>
+            <div class="bg-blue-700">F</div>
+            <div class="bg-blue-200">G</div>
+            <div class="bg-blue-300">H</div>
+            <div class="bg-blue-400">I</div>
+            <div class="bg-blue-500">J</div>
+            <div class="bg-blue-600">K</div>
+            <div class="bg-blue-700">L</div>
+            <div class="bg-blue-200">M</div>
+            <div class="bg-blue-300">N</div>
+            <div class="bg-blue-400">O</div>
+            <div class="bg-blue-500">P</div>
         </div>
     </div>
 </body>
